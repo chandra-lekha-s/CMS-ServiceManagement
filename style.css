@@ -1,15 +1,150 @@
+
 body{
-	background-color: rgba(18, 110, 231, 0.884)
+/* 77f760 */
+	  background-color:#f5f7f5 ;
+	  background-attachment: fixed;
+	  overflow-x: hidden;
+	  overflow-y: scroll; 
 }
-.navbar-light .navbar-brand{
-	color: rgba(18, 110, 231, 0.884);
+
+a{
+  text-decoration: none;
+  color:white;
 }
 
 
-.navbar-light .navbar-nav .active>.nav-link{
-	color: rgba(18, 110, 231, 0.884);
+.select:hover{
+	background-color:white;
+	color:#24B9B2;
+	font-size: 30px;
+	opacity:1;
+	transition: .3s;
+	border-radius: 7px;
+
 }
 
-.navbar-light .navbar-nav .nav-link{
-	color: rgba(18, 110, 231, 0.884);
+.select:active{
+	border-radius: 25px;
+	transition: .5s;
+	font-size: 29px;
+}
+
+.icon:hover{
+
+	transform: rotateY(180deg);
+	transition: transform 1s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: -1;
+}
+
+.icon1{
+	position: fixed;
+	bottom:115px;
+	box-shadow: 0px 3px 5px black;
+	border-radius: 50%;
+	cursor:pointer;
+} 
+
+.icon1:hover{
+	transform: rotate(45deg);
+	transition: transform 1s;
+
+}
+
+.icon1:active{
+	transform: rotate(0deg);
+	transition: .2s;
+}
+
+
+.address{
+	position:fixed;
+	top:200px;left:150px;
+	height:300px; width:350px;
+	background-image: linear-gradient( to bottom right, #068a04,#05b302,#05b302,#068a04);
+	color:white;
+	padding: 35px 25px 25px 45px;
+	font-size: 23px;
+	font-family: cambay;
+	border-radius: 10px;
+	box-shadow: -2px 3px 5px black;
+}
+.address h2{
+	font-family: "cambay";
+	letter-spacing: 3px;
+	text-align: center;
+}
+.address p{
+	color: white;
+	font-family: "cambay";
+	font-size: 20px;
+	font-weight: 200;
+	padding: 8px 10px 5px;
+	letter-spacing: 1px;
+
+}
+
+.social{
+	position:fixed;
+	bottom:99px;left:150px;
+	height:76px; width:350px;
+	background-image: linear-gradient( to bottom right, #068a04,#05b302,#05b302,#068a04);
+	padding: 20px 25px 20px 45px;
+	border-radius: 15px;
+	box-shadow: -2px 3px 5px black;
+}
+
+.query h1{
+	color: #068a04;
+	font-family: "cambay";
+	font-weight: 800;
+	text-align: center;
+}
+.query label{
+	color:#068a04;
+	font-weight: 500;
+	margin: 6px 0 5px 0;
+}
+.query input text{
+	width: 100px;
+	color: #068a04;
+}
+.query button{
+	color: white;
+	background-color: #068a04;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px black;
+	border: none;
+	padding: 4px 18px;
+	margin-top: 9px;
+}
+
+@media only screen and (max-width: 1200px){
+	body{
+		overflow-y: scroll;
+	}
+.query{
+	display: block;
+	padding: 470px 0 50px 80px;
+}
+.contus{
+	display: block;
+}
+.address{
+	position: absolute;
+}
+.icon1{
+	position: absolute;
+	margin-top: 50px;
+	bottom:20px;
+	left: 0px;
+}
+.social{
+	position: absolute;
+	margin-top: 500px;
+}
+text {
+	size:"50";
+}
 }
